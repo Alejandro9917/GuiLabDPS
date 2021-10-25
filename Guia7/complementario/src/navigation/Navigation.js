@@ -2,7 +2,6 @@ import React from 'react';
 import CatStack from './CatStack';
 import DogStack from './DogStack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
 
