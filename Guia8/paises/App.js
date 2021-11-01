@@ -35,7 +35,7 @@ export default function App() {
   return (
     <View style={styles.app}>
       <View style={styles.contenido}>
-        <Formulario busqueda={busqueda} guardarbusqueda={guardarbusqueda}>
+        <Formulario busqueda={busqueda} guardarbusqueda={guardarbusqueda} guardarconsultar={guardarconsultar}>
           
         </Formulario>
         <Pais resultado={resultado}/>

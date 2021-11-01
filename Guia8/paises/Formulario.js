@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Text, TextInput, View, StyleSheet, TouchableWithoutFeedback, Animated, Alert} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
-export default Formulario=({busqueda, guardarbusqueda})=>{
+export default Formulario=({busqueda, guardarbusqueda, guardarconsultar})=>{
     const {pais} = busqueda;
 
     const[animacionboton] =useState(new Animated.Value(1));
@@ -65,6 +65,7 @@ export default Formulario=({busqueda, guardarbusqueda})=>{
             <TouchableWithoutFeedback
                 onPressIn={()=> animacionEntrada()}
                 onPressOut={()=> animacionSalida()}
+                onPress={()=> consultarPais()}
             >
                 <View style={styles.btnBuscar}>
                     <Text style ={styles.textoBuscar}>Buscar país</Text>
